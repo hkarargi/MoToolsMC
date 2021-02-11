@@ -1,0 +1,16 @@
+{
+  "group": "moswords",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cooked_beef"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "moswords:edibleadder",
+    "count": 1
+  }
+}

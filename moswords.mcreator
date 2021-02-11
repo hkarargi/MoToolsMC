@@ -1,7 +1,7 @@
 {
   "id_map": {
-    "GUI": 2,
-    "DIMENSION": 2
+    "DIMENSION": 2,
+    "GUI": 2
   },
   "mod_elements": [
     {
@@ -187,56 +187,6 @@
       "ids": {}
     },
     {
-      "name": "BlueUI",
-      "type": "gui",
-      "sortid": 24,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {
-        "0": 1
-      }
-    },
-    {
-      "name": "BlueUIBindOnKeyPressed",
-      "type": "procedure",
-      "sortid": 25,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "int"
-          },
-          {
-            "name": "y",
-            "type": "int"
-          },
-          {
-            "name": "z",
-            "type": "int"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BlueUIBind",
-      "type": "keybind",
-      "sortid": 25,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "Getfreecoal",
       "type": "procedure",
       "sortid": 26,
@@ -381,6 +331,30 @@
       "ids": {
         "1": 2
       }
+    },
+    {
+      "name": "EdibleAdderRecipe",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Oil",
+      "type": "fluid",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "OilFuel",
+      "type": "fuel",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -390,12 +364,12 @@
       "item.bluearmorhelmet.name": "Blue Helmet",
       "tile.blueore.name": "Blue Ore",
       "item.bluearmorbody.name": "Blue Chestplate",
-      "key.mcreator.blueuibind": "Blue UI Bind",
       "item.bluesword.name": "Blue Sword",
       "item.eyeofinvisibility.name": "Eye Of Invisibility",
       "item.bluearmorlegs.name": "Blue Leggings",
       "item.edibleadder.name": "Edible Adder",
       "item.bluearmorboots.name": "Blue Boots",
+      "fluid.oil": "Oil",
       "item.coalstickbag.name": "Coal and Stick Bag",
       "item.potioninvis.name": "Potion Of Invisibility",
       "item.bluehoe.name": "Blue Hoe",
