@@ -32,20 +32,6 @@
           "x": 264,
           "y": 132
         }
-      },
-      {
-        "type": "button",
-        "data": {
-          "text": "Coal and Stick Button",
-          "onClick": {
-            "name": "Getfreecoal"
-          },
-          "width": 480,
-          "height": 40,
-          "name": "Coal and Stick Button",
-          "x": 192,
-          "y": 42
-        }
       }
     ]
   }

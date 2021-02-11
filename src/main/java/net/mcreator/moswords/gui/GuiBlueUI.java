@@ -24,7 +24,6 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.gui.GuiButton;
 
-import net.mcreator.moswords.procedure.ProcedureGetfreecoal;
 import net.mcreator.moswords.MoSwords;
 import net.mcreator.moswords.ElementsMoSwords;
 
@@ -283,7 +282,6 @@ public class GuiBlueUI extends ElementsMoSwords.ModElement {
 			this.guiTop = (this.height - 166) / 2;
 			Keyboard.enableRepeatEvents(true);
 			this.buttonList.clear();
-			this.buttonList.add(new GuiButton(0, this.guiLeft + -29, this.guiTop + -16, 240, 20, "Coal and Stick Button"));
 		}
 
 		@Override
@@ -398,13 +396,6 @@ public class GuiBlueUI extends ElementsMoSwords.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
-		if (buttonID == 0) {
-			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-				$_dependencies.put("entity", entity);
-				ProcedureGetfreecoal.executeProcedure($_dependencies);
-			}
-		}
 	}
 
 	private static void handleSlotAction(EntityPlayer entity, int slotID, int changeType, int meta, int x, int y, int z) {
