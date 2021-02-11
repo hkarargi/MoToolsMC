@@ -20,6 +20,6 @@ public class ProcedureBlueFoodEatenInvis extends ElementsMoSwords.ModElement {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof EntityLivingBase)
-			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, (int) 120, (int) 1));
+			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, (int) 120, (int) 120));
 	}
 }

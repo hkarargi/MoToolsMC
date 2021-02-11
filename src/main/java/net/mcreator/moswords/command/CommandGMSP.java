@@ -81,6 +81,7 @@ public class CommandGMSP extends ElementsMoSwords.ModElement {
 				});
 				{
 					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+					$_dependencies.put("entity", entity);
 					ProcedureGMSPCommandExecuted.executeProcedure($_dependencies);
 				}
 			}

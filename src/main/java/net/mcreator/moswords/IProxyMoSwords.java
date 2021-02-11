@@ -1,7 +1,11 @@
 package net.mcreator.moswords;
 
-public interface IProxyMoSwords {
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 
+public interface IProxyMoSwords {
 	void preInit(FMLPreInitializationEvent event);
 
 	void init(FMLInitializationEvent event);
@@ -9,5 +13,4 @@ public interface IProxyMoSwords {
 	void postInit(FMLPostInitializationEvent event);
 
 	void serverLoad(FMLServerStartingEvent event);
-
 }
