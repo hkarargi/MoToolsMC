@@ -20,6 +20,6 @@ public class ProcedurePotionInvisRightClickedInAir extends ElementsMoSwords.ModE
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof EntityLivingBase)
-			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, (int) 10, (int) 10));
+			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, (int) 240, (int) 10));
 	}
 }

@@ -42,14 +42,13 @@ public class ItemBlue extends ElementsMoSwords.ModElement {
 			super(20, 20f, true);
 			setUnlocalizedName("blue");
 			setRegistryName("blue");
-			setAlwaysEdible();
 			setCreativeTab(TabBlueTab.tab);
 			setMaxStackSize(64);
 		}
 
 		@Override
 		public int getMaxItemUseDuration(ItemStack stack) {
-			return 1;
+			return 15;
 		}
 
 		@Override

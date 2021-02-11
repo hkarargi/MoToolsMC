@@ -58,10 +58,76 @@ public class GuiBlueUI extends ElementsMoSwords.ModElement {
 			this.x = x;
 			this.y = y;
 			this.z = z;
-			this.internal = new InventoryBasic("", true, 0);
+			this.internal = new InventoryBasic("", true, 28);
 			TileEntity ent = world.getTileEntity(new BlockPos(x, y, z));
 			if (ent instanceof IInventory)
 				this.internal = (IInventory) ent;
+			this.customSlots.put(0, this.addSlotToContainer(new Slot(internal, 0, 8, 57) {
+			}));
+			this.customSlots.put(1, this.addSlotToContainer(new Slot(internal, 1, 26, 57) {
+			}));
+			this.customSlots.put(2, this.addSlotToContainer(new Slot(internal, 2, 44, 57) {
+			}));
+			this.customSlots.put(3, this.addSlotToContainer(new Slot(internal, 3, 62, 57) {
+			}));
+			this.customSlots.put(4, this.addSlotToContainer(new Slot(internal, 4, 80, 57) {
+			}));
+			this.customSlots.put(5, this.addSlotToContainer(new Slot(internal, 5, 98, 57) {
+			}));
+			this.customSlots.put(6, this.addSlotToContainer(new Slot(internal, 6, 116, 57) {
+			}));
+			this.customSlots.put(7, this.addSlotToContainer(new Slot(internal, 7, 134, 57) {
+			}));
+			this.customSlots.put(8, this.addSlotToContainer(new Slot(internal, 8, 152, 57) {
+			}));
+			this.customSlots.put(9, this.addSlotToContainer(new Slot(internal, 9, 8, 39) {
+			}));
+			this.customSlots.put(10, this.addSlotToContainer(new Slot(internal, 10, 26, 39) {
+			}));
+			this.customSlots.put(11, this.addSlotToContainer(new Slot(internal, 11, 44, 39) {
+			}));
+			this.customSlots.put(13, this.addSlotToContainer(new Slot(internal, 13, 62, 39) {
+			}));
+			this.customSlots.put(14, this.addSlotToContainer(new Slot(internal, 14, 80, 39) {
+			}));
+			this.customSlots.put(15, this.addSlotToContainer(new Slot(internal, 15, 98, 39) {
+			}));
+			this.customSlots.put(16, this.addSlotToContainer(new Slot(internal, 16, 116, 39) {
+			}));
+			this.customSlots.put(17, this.addSlotToContainer(new Slot(internal, 17, 134, 39) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
+			}));
+			this.customSlots.put(18, this.addSlotToContainer(new Slot(internal, 18, 152, 39) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
+			}));
+			this.customSlots.put(19, this.addSlotToContainer(new Slot(internal, 19, 8, 21) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
+			}));
+			this.customSlots.put(20, this.addSlotToContainer(new Slot(internal, 20, 26, 21) {
+			}));
+			this.customSlots.put(21, this.addSlotToContainer(new Slot(internal, 21, 44, 21) {
+			}));
+			this.customSlots.put(22, this.addSlotToContainer(new Slot(internal, 22, 62, 21) {
+			}));
+			this.customSlots.put(23, this.addSlotToContainer(new Slot(internal, 23, 80, 21) {
+			}));
+			this.customSlots.put(24, this.addSlotToContainer(new Slot(internal, 24, 98, 21) {
+			}));
+			this.customSlots.put(25, this.addSlotToContainer(new Slot(internal, 25, 116, 21) {
+			}));
+			this.customSlots.put(27, this.addSlotToContainer(new Slot(internal, 27, 152, 21) {
+			}));
+			this.customSlots.put(26, this.addSlotToContainer(new Slot(internal, 26, 134, 21) {
+			}));
 			int si;
 			int sj;
 			for (si = 0; si < 3; ++si)
@@ -87,18 +153,18 @@ public class GuiBlueUI extends ElementsMoSwords.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 0) {
-					if (!this.mergeItemStack(itemstack1, 0, this.inventorySlots.size(), true)) {
+				if (index < 27) {
+					if (!this.mergeItemStack(itemstack1, 27, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 0, false)) {
-					if (index < 0 + 27) {
-						if (!this.mergeItemStack(itemstack1, 0 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 27, false)) {
+					if (index < 27 + 27) {
+						if (!this.mergeItemStack(itemstack1, 27 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 0, 0 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 27, 27 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}
@@ -265,8 +331,8 @@ public class GuiBlueUI extends ElementsMoSwords.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int par1, int par2) {
-			this.fontRenderer.drawString("Extra Inventory", 7, 11, -16777216);
-			this.fontRenderer.drawString("Enjoy The Extra Inventory", 7, 29, -16777216);
+			this.fontRenderer.drawString("Extra Inventory", -119, -25, -1);
+			this.fontRenderer.drawString("Enjoy The Extra Inventory", -119, -16, -1);
 		}
 
 		@Override
