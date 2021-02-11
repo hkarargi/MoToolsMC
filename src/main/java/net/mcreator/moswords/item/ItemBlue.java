@@ -48,7 +48,7 @@ public class ItemBlue extends ElementsMoSwords.ModElement {
 
 		@Override
 		public int getMaxItemUseDuration(ItemStack stack) {
-			return 15;
+			return 38;
 		}
 
 		@Override
