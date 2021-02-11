@@ -1,0 +1,19 @@
+{
+  "group": "moswords",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moswords:edibleadder"
+    },
+    {
+      "item": "moswords:eyeofinvisibility"
+    },
+    {
+      "item": "moswords:bluegem"
+    }
+  ],
+  "result": {
+    "item": "moswords:blue",
+    "count": 1
+  }
+}

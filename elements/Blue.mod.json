@@ -1,0 +1,24 @@
+{
+  "_fv": 6,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "bluefud",
+    "customModelName": "Normal",
+    "name": "Blue Food",
+    "creativeTab": {
+      "value": "CUSTOM:BlueTab"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 20,
+    "saturation": 20.0,
+    "eatingSpeed": 1,
+    "forDogs": true,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "BlueFoodEatenInvis"
+    }
+  }
+}

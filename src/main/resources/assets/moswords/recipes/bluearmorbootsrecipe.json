@@ -1,0 +1,26 @@
+{
+  "group": "moswords",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "moswords:bluegem"
+    },
+    "2": {
+      "item": "moswords:bluegem"
+    },
+    "3": {
+      "item": "moswords:bluegem"
+    },
+    "5": {
+      "item": "moswords:bluegem"
+    }
+  },
+  "result": {
+    "item": "moswords:bluearmorboots",
+    "count": 1
+  }
+}

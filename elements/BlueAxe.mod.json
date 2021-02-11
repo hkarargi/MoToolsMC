@@ -1,0 +1,27 @@
+{
+  "_fv": 6,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "blue_axe",
+    "customModelName": "Normal",
+    "name": "Blue Axe",
+    "creativeTab": {
+      "value": "CUSTOM:BlueTab"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 8,
+    "efficiency": 10.0,
+    "attackSpeed": 0.0,
+    "enchantability": 30,
+    "damageVsEntity": 14.0,
+    "usageCount": 9000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:BlueGem"
+      }
+    ]
+  }
+}

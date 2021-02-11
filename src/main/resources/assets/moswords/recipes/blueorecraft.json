@@ -1,0 +1,17 @@
+{
+  "group": "moswords",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moswords:blueore"
+    },
+    {
+      "item": "minecraft:coal",
+      "data": 0
+    }
+  ],
+  "result": {
+    "item": "moswords:bluegem",
+    "count": 1
+  }
+}

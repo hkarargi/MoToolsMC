@@ -1,0 +1,30 @@
+{
+  "group": "moswords",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    "4 "
+  ],
+  "key": {
+    "0": {
+      "item": "moswords:bluegem"
+    },
+    "1": {
+      "item": "moswords:bluegem"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    },
+    "3": {
+      "item": "moswords:bluegem"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "moswords:blueaxe",
+    "count": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_fv": 6,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 352,
+    "height": 93,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Free Blue Food",
+          "onClick": {
+            "name": "FoodUI"
+          },
+          "width": 280,
+          "height": 40,
+          "name": "Free Blue Food",
+          "x": 282,
+          "y": 222
+        }
+      }
+    ]
+  }
+}

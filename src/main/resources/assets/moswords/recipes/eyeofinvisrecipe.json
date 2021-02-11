@@ -1,0 +1,16 @@
+{
+  "group": "moswords",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moswords:blue"
+    },
+    {
+      "item": "minecraft:ender_eye"
+    }
+  ],
+  "result": {
+    "item": "moswords:eyeofinvisibility",
+    "count": 1
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "group": "moswords",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "moswords:bluegem"
+    },
+    "1": {
+      "item": "moswords:bluegem"
+    },
+    "2": {
+      "item": "moswords:bluegem"
+    },
+    "3": {
+      "item": "moswords:bluegem"
+    },
+    "4": {
+      "item": "moswords:bluegem"
+    },
+    "5": {
+      "item": "moswords:bluegem"
+    },
+    "6": {
+      "item": "moswords:bluegem"
+    },
+    "7": {
+      "item": "moswords:bluegem"
+    },
+    "8": {
+      "item": "moswords:bluegem"
+    }
+  },
+  "result": {
+    "item": "moswords:blueoreblock",
+    "count": 1
+  }
+}

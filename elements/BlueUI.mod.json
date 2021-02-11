@@ -1,0 +1,52 @@
+{
+  "_fv": 6,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Extra Inventory",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Extra Inventory",
+          "x": 264,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Enjoy The Extra Inventory",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Enjoy The Extra Inventory",
+          "x": 264,
+          "y": 132
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Coal and Stick Button",
+          "onClick": {
+            "name": "Getfreecoal"
+          },
+          "width": 480,
+          "height": 40,
+          "name": "Coal and Stick Button",
+          "x": 192,
+          "y": 42
+        }
+      }
+    ]
+  }
+}

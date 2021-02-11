@@ -1,0 +1,19 @@
+{
+  "group": "moswords",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "moswords:eyeofinvisibility"
+    },
+    "1": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "item": "moswords:potioninvis",
+    "count": 1
+  }
+}
