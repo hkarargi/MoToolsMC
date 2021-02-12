@@ -14,9 +14,9 @@ import net.minecraft.item.Item;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
+import net.mcreator.moswords.creativetab.TabBlueTab;
 import net.mcreator.moswords.ElementsMoSwords;
 
 import java.util.Set;
@@ -58,7 +58,7 @@ public class ItemHussmekSword extends ElementsMoSwords.ModElement {
 			public boolean hasEffect(ItemStack itemstack) {
 				return true;
 			}
-		}.setUnlocalizedName("hussmeksword").setRegistryName("hussmeksword").setCreativeTab(CreativeTabs.COMBAT));
+		}.setUnlocalizedName("hussmeksword").setRegistryName("hussmeksword").setCreativeTab(TabBlueTab.tab));
 	}
 
 	@SideOnly(Side.CLIENT)

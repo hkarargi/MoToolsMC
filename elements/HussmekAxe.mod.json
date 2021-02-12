@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Hussmek Axe",
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:BlueTab"
     },
     "toolType": "Axe",
     "harvestLevel": 16,

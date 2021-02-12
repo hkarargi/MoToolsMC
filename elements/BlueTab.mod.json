@@ -2,9 +2,9 @@
   "_fv": 6,
   "_type": "tab",
   "definition": {
-    "name": "Blue Tab",
+    "name": "Hussmek Tab",
     "icon": {
-      "value": "CUSTOM:BlueGem"
+      "value": "CUSTOM:HussmekIngot"
     },
     "showSearch": true
   }

@@ -10,6 +10,9 @@
     "textureLeggings": "hussmek_leggings",
     "enableBoots": true,
     "textureBoots": "hussmek_boots",
+    "onBodyTick": {
+      "name": "FlyHussmekChestplate"
+    },
     "creativeTab": {
       "value": "COMBAT"
     },

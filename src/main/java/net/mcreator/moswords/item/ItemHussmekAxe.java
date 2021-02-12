@@ -12,12 +12,12 @@ import net.minecraft.item.ItemTool;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.init.Blocks;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.Block;
 
+import net.mcreator.moswords.creativetab.TabBlueTab;
 import net.mcreator.moswords.ElementsMoSwords;
 
 import java.util.Set;
@@ -38,7 +38,7 @@ public class ItemHussmekAxe extends ElementsMoSwords.ModElement {
 			public boolean hasEffect(ItemStack itemstack) {
 				return true;
 			}
-		}.setUnlocalizedName("hussmekaxe").setRegistryName("hussmekaxe").setCreativeTab(CreativeTabs.TOOLS));
+		}.setUnlocalizedName("hussmekaxe").setRegistryName("hussmekaxe").setCreativeTab(TabBlueTab.tab));
 	}
 
 	@SideOnly(Side.CLIENT)

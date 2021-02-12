@@ -7,7 +7,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraft.item.ItemStack;
 import net.minecraft.creativetab.CreativeTabs;
 
-import net.mcreator.moswords.item.ItemBlueGem;
+import net.mcreator.moswords.item.ItemHussmekIngot;
 import net.mcreator.moswords.ElementsMoSwords;
 
 @ElementsMoSwords.ModElement.Tag
@@ -22,7 +22,7 @@ public class TabBlueTab extends ElementsMoSwords.ModElement {
 			@SideOnly(Side.CLIENT)
 			@Override
 			public ItemStack getTabIconItem() {
-				return new ItemStack(ItemBlueGem.block, (int) (1));
+				return new ItemStack(ItemHussmekIngot.block, (int) (1));
 			}
 
 			@SideOnly(Side.CLIENT)

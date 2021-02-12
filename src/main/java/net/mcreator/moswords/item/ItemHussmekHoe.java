@@ -11,9 +11,9 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemHoe;
 import net.minecraft.item.Item;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
+import net.mcreator.moswords.creativetab.TabBlueTab;
 import net.mcreator.moswords.ElementsMoSwords;
 
 import java.util.Set;
@@ -41,7 +41,7 @@ public class ItemHussmekHoe extends ElementsMoSwords.ModElement {
 			public boolean hasEffect(ItemStack itemstack) {
 				return true;
 			}
-		}.setUnlocalizedName("hussmekhoe").setRegistryName("hussmekhoe").setCreativeTab(CreativeTabs.TOOLS));
+		}.setUnlocalizedName("hussmekhoe").setRegistryName("hussmekhoe").setCreativeTab(TabBlueTab.tab));
 	}
 
 	@SideOnly(Side.CLIENT)

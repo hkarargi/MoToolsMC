@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Hussmek Pickaxe",
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:BlueTab"
     },
     "toolType": "Pickaxe",
     "harvestLevel": 16,

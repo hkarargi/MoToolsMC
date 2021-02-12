@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Hussmek Shovel",
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:BlueTab"
     },
     "toolType": "Spade",
     "harvestLevel": 16,
