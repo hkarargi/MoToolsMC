@@ -1,8 +1,8 @@
 {
   "id_map": {
+    "GUI": 5,
     "ENTITY": 4,
-    "DIMENSION": 2,
-    "GUI": 3
+    "DIMENSION": 2
   },
   "mod_elements": [
     {
@@ -332,25 +332,38 @@
       "ids": {}
     },
     {
-      "name": "BlueUI",
-      "type": "gui",
+      "name": "Moss",
+      "type": "block",
       "sortid": 40,
       "compiles": true,
       "locked_code": false,
-      "ids": {
-        "0": 3
-      }
+      "ids": {}
     },
     {
-      "name": "Gladiator",
-      "type": "mob",
+      "name": "FakeMossRecipe",
+      "type": "recipe",
       "sortid": 42,
       "compiles": true,
       "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FakeMossInventory",
+      "type": "gui",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
       "ids": {
-        "0": 3,
-        "1": 4
+        "0": 5
       }
+    },
+    {
+      "name": "FakeMoss",
+      "type": "block",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -369,10 +382,11 @@
       "item.potioninvis.name": "Potion Of Invisibility",
       "item.bluehoe.name": "Blue Hoe",
       "item.blueaxe.name": "Blue Axe",
+      "tile.moss.name": "Moss",
       "item.bluefoodbag.name": "Blue Food Sack",
       "tile.blueoreblock.name": "Block of Blue",
-      "entity.gladiator.name": "Gladiator",
       "item.bluegem.name": "Blue",
+      "tile.fakemoss.name": "Fake Moss",
       "item.blue.name": "Blue Food",
       "item.blueshovel.name": "Blue Shovel",
       "item.bluepickaxe.name": "Blue Pickaxe",

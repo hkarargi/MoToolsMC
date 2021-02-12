@@ -34,7 +34,7 @@ import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.block.Block;
 
-import net.mcreator.moswords.gui.GuiBlueUI;
+import net.mcreator.moswords.gui.GuiFakeMossInventory;
 
 import java.util.function.Supplier;
 import java.util.Random;
@@ -124,15 +124,15 @@ public class ElementsMoSwords implements IFuelHandler, IWorldGenerator {
 	public static class GuiHandler implements IGuiHandler {
 		@Override
 		public Object getServerGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
-			if (id == GuiBlueUI.GUIID)
-				return new GuiBlueUI.GuiContainerMod(world, x, y, z, player);
+			if (id == GuiFakeMossInventory.GUIID)
+				return new GuiFakeMossInventory.GuiContainerMod(world, x, y, z, player);
 			return null;
 		}
 
 		@Override
 		public Object getClientGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
-			if (id == GuiBlueUI.GUIID)
-				return new GuiBlueUI.GuiWindow(world, x, y, z, player);
+			if (id == GuiFakeMossInventory.GUIID)
+				return new GuiFakeMossInventory.GuiWindow(world, x, y, z, player);
 			return null;
 		}
 	}

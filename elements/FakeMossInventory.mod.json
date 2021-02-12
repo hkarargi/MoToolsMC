@@ -8,6 +8,19 @@
     "renderBgLayer": true,
     "components": [
       {
+        "type": "label",
+        "data": {
+          "text": "Fake Moss",
+          "color": {
+            "value": -12566464,
+            "falpha": 0.0
+          },
+          "name": "Fake Moss",
+          "x": 263,
+          "y": 85
+        }
+      },
+      {
         "type": "inputslot",
         "data": {
           "inputLimit": {
@@ -241,9 +254,9 @@
           "inputLimit": {
             "value": ""
           },
-          "id": 21,
-          "name": "Slot #21",
-          "x": 336,
+          "id": 20,
+          "name": "Slot #20",
+          "x": 300,
           "y": 114
         }
       },
@@ -253,9 +266,9 @@
           "inputLimit": {
             "value": ""
           },
-          "id": 20,
-          "name": "Slot #20",
-          "x": 300,
+          "id": 21,
+          "name": "Slot #21",
+          "x": 336,
           "y": 114
         }
       },
@@ -329,19 +342,6 @@
           "name": "Slot #27",
           "x": 552,
           "y": 114
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "Extra Inventory",
-          "color": {
-            "value": -12566464,
-            "falpha": 0.0
-          },
-          "name": "Extra Inventory",
-          "x": 264,
-          "y": 78
         }
       }
     ]

@@ -34,11 +34,11 @@ import java.util.HashMap;
 import java.io.IOException;
 
 @ElementsMoSwords.ModElement.Tag
-public class GuiBlueUI extends ElementsMoSwords.ModElement {
-	public static int GUIID = 3;
+public class GuiFakeMossInventory extends ElementsMoSwords.ModElement {
+	public static int GUIID = 5;
 	public static HashMap guistate = new HashMap();
-	public GuiBlueUI(ElementsMoSwords instance) {
-		super(instance, 40);
+	public GuiFakeMossInventory(ElementsMoSwords instance) {
+		super(instance, 43);
 	}
 
 	@Override
@@ -100,9 +100,9 @@ public class GuiBlueUI extends ElementsMoSwords.ModElement {
 			}));
 			this.customSlots.put(19, this.addSlotToContainer(new Slot(internal, 19, 8, 21) {
 			}));
-			this.customSlots.put(21, this.addSlotToContainer(new Slot(internal, 21, 44, 21) {
-			}));
 			this.customSlots.put(20, this.addSlotToContainer(new Slot(internal, 20, 26, 21) {
+			}));
+			this.customSlots.put(21, this.addSlotToContainer(new Slot(internal, 21, 44, 21) {
 			}));
 			this.customSlots.put(22, this.addSlotToContainer(new Slot(internal, 22, 62, 21) {
 			}));
@@ -284,7 +284,7 @@ public class GuiBlueUI extends ElementsMoSwords.ModElement {
 			this.xSize = 176;
 			this.ySize = 166;
 		}
-		private static final ResourceLocation texture = new ResourceLocation("moswords:textures/blueui.png");
+		private static final ResourceLocation texture = new ResourceLocation("moswords:textures/fakemossinventory.png");
 		@Override
 		public void drawScreen(int mouseX, int mouseY, float partialTicks) {
 			this.drawDefaultBackground();
@@ -319,7 +319,7 @@ public class GuiBlueUI extends ElementsMoSwords.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int par1, int par2) {
-			this.fontRenderer.drawString("Extra Inventory", 7, 2, -12566464);
+			this.fontRenderer.drawString("Fake Moss", 6, 6, -12566464);
 		}
 
 		@Override

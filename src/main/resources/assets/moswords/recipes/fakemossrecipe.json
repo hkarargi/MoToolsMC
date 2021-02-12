@@ -1,0 +1,19 @@
+{
+  "group": "moswords",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:chest"
+    },
+    "1": {
+      "item": "moswords:moss"
+    }
+  },
+  "result": {
+    "item": "moswords:fakemoss",
+    "count": 1
+  }
+}

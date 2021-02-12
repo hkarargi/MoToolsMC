@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "moswords:blocks/hiddenitems",
+    "up": "moswords:blocks/hiddenitems",
+    "north": "moswords:blocks/hiddenitems",
+    "east": "moswords:blocks/hiddenitems",
+    "south": "moswords:blocks/hiddenitems",
+    "west": "moswords:blocks/hiddenitems",
+    "particle": "moswords:blocks/hiddenitems"
+  }
+}
