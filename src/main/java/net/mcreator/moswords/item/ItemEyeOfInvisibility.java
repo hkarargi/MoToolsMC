@@ -20,7 +20,7 @@ public class ItemEyeOfInvisibility extends ElementsMoSwords.ModElement {
 	@GameRegistry.ObjectHolder("moswords:eyeofinvisibility")
 	public static final Item block = null;
 	public ItemEyeOfInvisibility(ElementsMoSwords instance) {
-		super(instance, 36);
+		super(instance, 14);
 	}
 
 	@Override

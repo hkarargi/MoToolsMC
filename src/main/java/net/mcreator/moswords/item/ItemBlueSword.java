@@ -29,7 +29,7 @@ public class ItemBlueSword extends ElementsMoSwords.ModElement {
 	@GameRegistry.ObjectHolder("moswords:bluesword")
 	public static final Item block = null;
 	public ItemBlueSword(ElementsMoSwords instance) {
-		super(instance, 9);
+		super(instance, 1);
 	}
 
 	@Override

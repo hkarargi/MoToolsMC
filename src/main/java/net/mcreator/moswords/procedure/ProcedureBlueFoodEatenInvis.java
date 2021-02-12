@@ -10,7 +10,7 @@ import net.mcreator.moswords.ElementsMoSwords;
 @ElementsMoSwords.ModElement.Tag
 public class ProcedureBlueFoodEatenInvis extends ElementsMoSwords.ModElement {
 	public ProcedureBlueFoodEatenInvis(ElementsMoSwords instance) {
-		super(instance, 39);
+		super(instance, 35);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

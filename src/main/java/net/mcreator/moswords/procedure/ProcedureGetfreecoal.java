@@ -12,7 +12,7 @@ import net.mcreator.moswords.ElementsMoSwords;
 @ElementsMoSwords.ModElement.Tag
 public class ProcedureGetfreecoal extends ElementsMoSwords.ModElement {
 	public ProcedureGetfreecoal(ElementsMoSwords instance) {
-		super(instance, 26);
+		super(instance, 31);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

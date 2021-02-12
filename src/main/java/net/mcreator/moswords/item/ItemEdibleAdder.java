@@ -20,7 +20,7 @@ public class ItemEdibleAdder extends ElementsMoSwords.ModElement {
 	@GameRegistry.ObjectHolder("moswords:edibleadder")
 	public static final Item block = null;
 	public ItemEdibleAdder(ElementsMoSwords instance) {
-		super(instance, 43);
+		super(instance, 13);
 	}
 
 	@Override

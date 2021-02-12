@@ -24,7 +24,7 @@ public class ItemBlueShovel extends ElementsMoSwords.ModElement {
 	@GameRegistry.ObjectHolder("moswords:blueshovel")
 	public static final Item block = null;
 	public ItemBlueShovel(ElementsMoSwords instance) {
-		super(instance, 10);
+		super(instance, 4);
 	}
 
 	@Override

@@ -28,7 +28,7 @@ public class ItemBlueFoodBag extends ElementsMoSwords.ModElement {
 	@GameRegistry.ObjectHolder("moswords:bluefoodbag")
 	public static final Item block = null;
 	public ItemBlueFoodBag(ElementsMoSwords instance) {
-		super(instance, 40);
+		super(instance, 10);
 	}
 
 	@Override

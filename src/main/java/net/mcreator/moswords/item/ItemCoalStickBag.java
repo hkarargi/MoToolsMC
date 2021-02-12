@@ -28,7 +28,7 @@ public class ItemCoalStickBag extends ElementsMoSwords.ModElement {
 	@GameRegistry.ObjectHolder("moswords:coalstickbag")
 	public static final Item block = null;
 	public ItemCoalStickBag(ElementsMoSwords instance) {
-		super(instance, 45);
+		super(instance, 11);
 	}
 
 	@Override

@@ -1,13 +1,14 @@
 {
   "id_map": {
+    "ENTITY": 4,
     "DIMENSION": 2,
-    "GUI": 2
+    "GUI": 3
   },
   "mod_elements": [
     {
       "name": "BlueOre",
       "type": "block",
-      "sortid": 1,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -15,7 +16,7 @@
     {
       "name": "BlueOreBlock",
       "type": "block",
-      "sortid": 2,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -23,7 +24,7 @@
     {
       "name": "BlueGem",
       "type": "item",
-      "sortid": 3,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -31,7 +32,7 @@
     {
       "name": "BlueOreBlockRecipe",
       "type": "recipe",
-      "sortid": 4,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -39,7 +40,7 @@
     {
       "name": "BlueBlockOreRecipe",
       "type": "recipe",
-      "sortid": 5,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -47,7 +48,7 @@
     {
       "name": "BluePickaxe",
       "type": "tool",
-      "sortid": 7,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -55,7 +56,7 @@
     {
       "name": "BlueAxe",
       "type": "tool",
-      "sortid": 8,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -63,7 +64,7 @@
     {
       "name": "BlueSword",
       "type": "tool",
-      "sortid": 9,
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -71,7 +72,7 @@
     {
       "name": "BlueShovel",
       "type": "tool",
-      "sortid": 10,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -79,7 +80,7 @@
     {
       "name": "BlueHoe",
       "type": "tool",
-      "sortid": 11,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -87,7 +88,7 @@
     {
       "name": "BluePickaxeRecipe",
       "type": "recipe",
-      "sortid": 12,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -95,7 +96,7 @@
     {
       "name": "BlueAxeRecipe",
       "type": "recipe",
-      "sortid": 13,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -103,7 +104,7 @@
     {
       "name": "BlueSwordRecipe",
       "type": "recipe",
-      "sortid": 14,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -111,7 +112,7 @@
     {
       "name": "BlueShovelRecipe",
       "type": "recipe",
-      "sortid": 15,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -119,7 +120,7 @@
     {
       "name": "BlueHoeRecipe",
       "type": "recipe",
-      "sortid": 16,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -127,7 +128,7 @@
     {
       "name": "BlueArmor",
       "type": "armor",
-      "sortid": 17,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -141,7 +142,7 @@
     {
       "name": "BlueArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 18,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -149,7 +150,7 @@
     {
       "name": "BlueArmorBodyRecipe",
       "type": "recipe",
-      "sortid": 19,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -157,7 +158,7 @@
     {
       "name": "BlueArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 20,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -165,7 +166,7 @@
     {
       "name": "BlueArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 21,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -173,7 +174,7 @@
     {
       "name": "BlueOreCraft",
       "type": "recipe",
-      "sortid": 22,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -181,7 +182,7 @@
     {
       "name": "BlueTab",
       "type": "tab",
-      "sortid": 23,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -189,7 +190,7 @@
     {
       "name": "Getfreecoal",
       "type": "procedure",
-      "sortid": 26,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -205,7 +206,7 @@
     {
       "name": "Blue",
       "type": "food",
-      "sortid": 27,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -213,7 +214,7 @@
     {
       "name": "FoodUI",
       "type": "procedure",
-      "sortid": 29,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -229,7 +230,7 @@
     {
       "name": "PotionInvis",
       "type": "item",
-      "sortid": 35,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -237,7 +238,7 @@
     {
       "name": "EyeOfInvisibility",
       "type": "item",
-      "sortid": 36,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -245,7 +246,7 @@
     {
       "name": "PotionInvisRecipe",
       "type": "recipe",
-      "sortid": 37,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -253,7 +254,7 @@
     {
       "name": "EyeOfInvisRecipe",
       "type": "recipe",
-      "sortid": 38,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -261,7 +262,7 @@
     {
       "name": "BlueFoodEatenInvis",
       "type": "procedure",
-      "sortid": 39,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -277,7 +278,7 @@
     {
       "name": "BlueFoodBag",
       "type": "item",
-      "sortid": 40,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -285,7 +286,7 @@
     {
       "name": "PotionInvisRightClickedInAir",
       "type": "procedure",
-      "sortid": 42,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -301,7 +302,7 @@
     {
       "name": "EdibleAdder",
       "type": "item",
-      "sortid": 43,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -309,7 +310,7 @@
     {
       "name": "BlueFoodRecipe",
       "type": "recipe",
-      "sortid": 44,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -317,44 +318,39 @@
     {
       "name": "CoalStickBag",
       "type": "item",
-      "sortid": 45,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "ids": {}
-    },
-    {
-      "name": "BlueDimension",
-      "type": "dimension",
-      "sortid": 46,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {
-        "1": 2
-      }
     },
     {
       "name": "EdibleAdderRecipe",
       "type": "recipe",
-      "sortid": 47,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "ids": {}
     },
     {
-      "name": "Oil",
-      "type": "fluid",
-      "sortid": 48,
+      "name": "BlueUI",
+      "type": "gui",
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {
+        "0": 3
+      }
     },
     {
-      "name": "OilFuel",
-      "type": "fuel",
-      "sortid": 49,
+      "name": "Gladiator",
+      "type": "mob",
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {
+        "0": 3,
+        "1": 4
+      }
     }
   ],
   "variable_elements": [],
@@ -369,19 +365,18 @@
       "item.bluearmorlegs.name": "Blue Leggings",
       "item.edibleadder.name": "Edible Adder",
       "item.bluearmorboots.name": "Blue Boots",
-      "fluid.oil": "Oil",
       "item.coalstickbag.name": "Coal and Stick Bag",
       "item.potioninvis.name": "Potion Of Invisibility",
       "item.bluehoe.name": "Blue Hoe",
       "item.blueaxe.name": "Blue Axe",
       "item.bluefoodbag.name": "Blue Food Sack",
       "tile.blueoreblock.name": "Block of Blue",
+      "entity.gladiator.name": "Gladiator",
       "item.bluegem.name": "Blue",
       "item.blue.name": "Blue Food",
       "item.blueshovel.name": "Blue Shovel",
       "item.bluepickaxe.name": "Blue Pickaxe",
-      "itemGroup.tabbluetab": "Blue Tab",
-      "item.bluedimension.name": "Blue and Diamond"
+      "itemGroup.tabbluetab": "Blue Tab"
     }
   },
   "workspaceSettings": {
