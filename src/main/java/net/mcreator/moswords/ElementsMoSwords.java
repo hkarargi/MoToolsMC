@@ -34,6 +34,7 @@ import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.block.Block;
 
+import net.mcreator.moswords.gui.GuiHussmekBagUI;
 import net.mcreator.moswords.gui.GuiFakeMossInventory;
 
 import java.util.function.Supplier;
@@ -126,6 +127,8 @@ public class ElementsMoSwords implements IFuelHandler, IWorldGenerator {
 		public Object getServerGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
 			if (id == GuiFakeMossInventory.GUIID)
 				return new GuiFakeMossInventory.GuiContainerMod(world, x, y, z, player);
+			if (id == GuiHussmekBagUI.GUIID)
+				return new GuiHussmekBagUI.GuiContainerMod(world, x, y, z, player);
 			return null;
 		}
 
@@ -133,6 +136,8 @@ public class ElementsMoSwords implements IFuelHandler, IWorldGenerator {
 		public Object getClientGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
 			if (id == GuiFakeMossInventory.GUIID)
 				return new GuiFakeMossInventory.GuiWindow(world, x, y, z, player);
+			if (id == GuiHussmekBagUI.GUIID)
+				return new GuiHussmekBagUI.GuiWindow(world, x, y, z, player);
 			return null;
 		}
 	}

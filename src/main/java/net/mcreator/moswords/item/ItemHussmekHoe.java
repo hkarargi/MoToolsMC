@@ -11,36 +11,42 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemHoe;
 import net.minecraft.item.Item;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
-import net.mcreator.moswords.creativetab.TabBlueTab;
 import net.mcreator.moswords.ElementsMoSwords;
 
 import java.util.Set;
 import java.util.HashMap;
 
 @ElementsMoSwords.ModElement.Tag
-public class ItemBlueHoe extends ElementsMoSwords.ModElement {
-	@GameRegistry.ObjectHolder("moswords:bluehoe")
+public class ItemHussmekHoe extends ElementsMoSwords.ModElement {
+	@GameRegistry.ObjectHolder("moswords:hussmekhoe")
 	public static final Item block = null;
-	public ItemBlueHoe(ElementsMoSwords instance) {
-		super(instance, 5);
+	public ItemHussmekHoe(ElementsMoSwords instance) {
+		super(instance, 55);
 	}
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemHoe(EnumHelper.addToolMaterial("BLUEHOE", 8, 9000, 10f, 0f, 30)) {
+		elements.items.add(() -> new ItemHoe(EnumHelper.addToolMaterial("HUSSMEKHOE", 16, 18000, 20f, 2f, 60)) {
 			public Set<String> getToolClasses(ItemStack stack) {
 				HashMap<String, Integer> ret = new HashMap<String, Integer>();
-				ret.put("hoe", 8);
+				ret.put("hoe", 16);
 				return ret.keySet();
 			}
-		}.setUnlocalizedName("bluehoe").setRegistryName("bluehoe").setCreativeTab(TabBlueTab.tab));
+
+			@Override
+			@SideOnly(Side.CLIENT)
+			public boolean hasEffect(ItemStack itemstack) {
+				return true;
+			}
+		}.setUnlocalizedName("hussmekhoe").setRegistryName("hussmekhoe").setCreativeTab(CreativeTabs.TOOLS));
 	}
 
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerModels(ModelRegistryEvent event) {
-		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("moswords:bluehoe", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("moswords:hussmekhoe", "inventory"));
 	}
 }

@@ -1,0 +1,42 @@
+{
+  "group": "moswords",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "moswords:hussmekingot"
+    },
+    "1": {
+      "item": "moswords:hussmekingot"
+    },
+    "2": {
+      "item": "moswords:hussmekingot"
+    },
+    "3": {
+      "item": "moswords:hussmekingot"
+    },
+    "4": {
+      "item": "moswords:hussmekingot"
+    },
+    "5": {
+      "item": "moswords:hussmekingot"
+    },
+    "6": {
+      "item": "moswords:hussmekingot"
+    },
+    "7": {
+      "item": "moswords:hussmekingot"
+    },
+    "8": {
+      "item": "moswords:hussmekingot"
+    }
+  },
+  "result": {
+    "item": "moswords:hussmekoreblock",
+    "count": 1
+  }
+}

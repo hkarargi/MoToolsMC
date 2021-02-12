@@ -1,0 +1,23 @@
+{
+  "group": "moswords",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moswords:hussmekore"
+    },
+    {
+      "item": "minecraft:coal",
+      "data": 0
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "moswords:bluegem"
+    }
+  ],
+  "result": {
+    "item": "moswords:hussmekingot",
+    "count": 1
+  }
+}

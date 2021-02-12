@@ -1,0 +1,29 @@
+{
+  "group": "moswords",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "moswords:hussmekingot"
+    },
+    "1": {
+      "item": "moswords:hussmekingot"
+    },
+    "2": {
+      "item": "moswords:hussmekingot"
+    },
+    "3": {
+      "item": "moswords:hussmekingot"
+    },
+    "5": {
+      "item": "moswords:hussmekingot"
+    }
+  },
+  "result": {
+    "item": "moswords:hussmekarmorhelmet",
+    "count": 1
+  }
+}

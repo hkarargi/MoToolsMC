@@ -14,9 +14,9 @@ import net.minecraft.item.Item;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
-import net.mcreator.moswords.creativetab.TabBlueTab;
 import net.mcreator.moswords.ElementsMoSwords;
 
 import java.util.Set;
@@ -25,16 +25,16 @@ import java.util.HashMap;
 import com.google.common.collect.Multimap;
 
 @ElementsMoSwords.ModElement.Tag
-public class ItemBlueSword extends ElementsMoSwords.ModElement {
-	@GameRegistry.ObjectHolder("moswords:bluesword")
+public class ItemHussmekSword extends ElementsMoSwords.ModElement {
+	@GameRegistry.ObjectHolder("moswords:hussmeksword")
 	public static final Item block = null;
-	public ItemBlueSword(ElementsMoSwords instance) {
-		super(instance, 1);
+	public ItemHussmekSword(ElementsMoSwords instance) {
+		super(instance, 53);
 	}
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemSword(EnumHelper.addToolMaterial("BLUESWORD", 8, 9000, 10f, 11f, 30)) {
+		elements.items.add(() -> new ItemSword(EnumHelper.addToolMaterial("HUSSMEKSWORD", 8, 18000, 20f, 41f, 60)) {
 			@Override
 			public Multimap<String, AttributeModifier> getItemAttributeModifiers(EntityEquipmentSlot slot) {
 				Multimap<String, AttributeModifier> multimap = super.getItemAttributeModifiers(slot);
@@ -42,7 +42,7 @@ public class ItemBlueSword extends ElementsMoSwords.ModElement {
 					multimap.put(SharedMonsterAttributes.ATTACK_DAMAGE.getName(),
 							new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Weapon modifier", (double) this.getAttackDamage(), 0));
 					multimap.put(SharedMonsterAttributes.ATTACK_SPEED.getName(),
-							new AttributeModifier(ATTACK_SPEED_MODIFIER, "Weapon modifier", -2, 0));
+							new AttributeModifier(ATTACK_SPEED_MODIFIER, "Weapon modifier", 4, 0));
 				}
 				return multimap;
 			}
@@ -52,12 +52,18 @@ public class ItemBlueSword extends ElementsMoSwords.ModElement {
 				ret.put("sword", 8);
 				return ret.keySet();
 			}
-		}.setUnlocalizedName("bluesword").setRegistryName("bluesword").setCreativeTab(TabBlueTab.tab));
+
+			@Override
+			@SideOnly(Side.CLIENT)
+			public boolean hasEffect(ItemStack itemstack) {
+				return true;
+			}
+		}.setUnlocalizedName("hussmeksword").setRegistryName("hussmeksword").setCreativeTab(CreativeTabs.COMBAT));
 	}
 
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerModels(ModelRegistryEvent event) {
-		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("moswords:bluesword", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("moswords:hussmeksword", "inventory"));
 	}
 }

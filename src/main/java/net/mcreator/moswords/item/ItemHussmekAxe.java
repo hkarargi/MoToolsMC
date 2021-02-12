@@ -12,43 +12,48 @@ import net.minecraft.item.ItemTool;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.init.Blocks;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.Block;
 
-import net.mcreator.moswords.creativetab.TabBlueTab;
 import net.mcreator.moswords.ElementsMoSwords;
 
 import java.util.Set;
 
 @ElementsMoSwords.ModElement.Tag
-public class ItemBlueAxe extends ElementsMoSwords.ModElement {
-	@GameRegistry.ObjectHolder("moswords:blueaxe")
+public class ItemHussmekAxe extends ElementsMoSwords.ModElement {
+	@GameRegistry.ObjectHolder("moswords:hussmekaxe")
 	public static final Item block = null;
-	public ItemBlueAxe(ElementsMoSwords instance) {
-		super(instance, 3);
+	public ItemHussmekAxe(ElementsMoSwords instance) {
+		super(instance, 52);
 	}
 
 	@Override
 	public void initElements() {
 		elements.items.add(() -> new ItemToolCustom() {
-		}.setUnlocalizedName("blueaxe").setRegistryName("blueaxe").setCreativeTab(TabBlueTab.tab));
+			@Override
+			@SideOnly(Side.CLIENT)
+			public boolean hasEffect(ItemStack itemstack) {
+				return true;
+			}
+		}.setUnlocalizedName("hussmekaxe").setRegistryName("hussmekaxe").setCreativeTab(CreativeTabs.TOOLS));
 	}
 
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerModels(ModelRegistryEvent event) {
-		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("moswords:blueaxe", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("moswords:hussmekaxe", "inventory"));
 	}
 	private static class ItemToolCustom extends ItemTool {
 		private static final Set<Block> effective_items_set = com.google.common.collect.Sets
 				.newHashSet(new Block[]{Blocks.PLANKS, Blocks.BOOKSHELF, Blocks.LOG, Blocks.LOG2, Blocks.CHEST, Blocks.PUMPKIN, Blocks.LIT_PUMPKIN,
 						Blocks.MELON_BLOCK, Blocks.LADDER, Blocks.WOODEN_BUTTON, Blocks.WOODEN_PRESSURE_PLATE});
 		protected ItemToolCustom() {
-			super(EnumHelper.addToolMaterial("BLUEAXE", 8, 9000, 10f, 10f, 30), effective_items_set);
-			this.attackDamage = 10f;
-			this.attackSpeed = -2.5f;
+			super(EnumHelper.addToolMaterial("HUSSMEKAXE", 16, 18000, 20f, 71f, 60), effective_items_set);
+			this.attackDamage = 71f;
+			this.attackSpeed = 0f;
 		}
 
 		@Override

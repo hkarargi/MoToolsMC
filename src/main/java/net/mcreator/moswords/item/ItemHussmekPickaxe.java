@@ -9,38 +9,47 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemHoe;
+import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.Item;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
-import net.mcreator.moswords.creativetab.TabBlueTab;
 import net.mcreator.moswords.ElementsMoSwords;
 
 import java.util.Set;
 import java.util.HashMap;
 
 @ElementsMoSwords.ModElement.Tag
-public class ItemBlueHoe extends ElementsMoSwords.ModElement {
-	@GameRegistry.ObjectHolder("moswords:bluehoe")
+public class ItemHussmekPickaxe extends ElementsMoSwords.ModElement {
+	@GameRegistry.ObjectHolder("moswords:hussmekpickaxe")
 	public static final Item block = null;
-	public ItemBlueHoe(ElementsMoSwords instance) {
-		super(instance, 5);
+	public ItemHussmekPickaxe(ElementsMoSwords instance) {
+		super(instance, 51);
 	}
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemHoe(EnumHelper.addToolMaterial("BLUEHOE", 8, 9000, 10f, 0f, 30)) {
+		elements.items.add(() -> new ItemPickaxe(EnumHelper.addToolMaterial("HUSSMEKPICKAXE", 16, 18000, 20f, 21f, 60)) {
+			{
+				this.attackSpeed = -1f;
+			}
 			public Set<String> getToolClasses(ItemStack stack) {
 				HashMap<String, Integer> ret = new HashMap<String, Integer>();
-				ret.put("hoe", 8);
+				ret.put("pickaxe", 16);
 				return ret.keySet();
 			}
-		}.setUnlocalizedName("bluehoe").setRegistryName("bluehoe").setCreativeTab(TabBlueTab.tab));
+
+			@Override
+			@SideOnly(Side.CLIENT)
+			public boolean hasEffect(ItemStack itemstack) {
+				return true;
+			}
+		}.setUnlocalizedName("hussmekpickaxe").setRegistryName("hussmekpickaxe").setCreativeTab(CreativeTabs.TOOLS));
 	}
 
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerModels(ModelRegistryEvent event) {
-		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("moswords:bluehoe", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("moswords:hussmekpickaxe", "inventory"));
 	}
 }

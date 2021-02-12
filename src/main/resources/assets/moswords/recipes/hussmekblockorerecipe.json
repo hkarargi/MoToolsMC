@@ -1,0 +1,13 @@
+{
+  "group": "moswords",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moswords:hussmekoreblock"
+    }
+  ],
+  "result": {
+    "item": "moswords:hussmekingot",
+    "count": 9
+  }
+}

@@ -31,7 +31,7 @@ public class ItemBlueShovel extends ElementsMoSwords.ModElement {
 	public void initElements() {
 		elements.items.add(() -> new ItemSpade(EnumHelper.addToolMaterial("BLUESHOVEL", 8, 9000, 10f, 6f, 30)) {
 			{
-				this.attackSpeed = -3.9f;
+				this.attackSpeed = -3f;
 			}
 			public Set<String> getToolClasses(ItemStack stack) {
 				HashMap<String, Integer> ret = new HashMap<String, Integer>();

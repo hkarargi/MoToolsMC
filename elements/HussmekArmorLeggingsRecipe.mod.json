@@ -1,0 +1,45 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:HussmekIngot"
+      },
+      {
+        "value": "CUSTOM:HussmekIngot"
+      },
+      {
+        "value": "CUSTOM:HussmekIngot"
+      },
+      {
+        "value": "CUSTOM:HussmekIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:HussmekIngot"
+      },
+      {
+        "value": "CUSTOM:HussmekIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:HussmekIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:HussmekArmor.legs"
+    },
+    "name": "hussmekarmorleggingsrecipe",
+    "namespace": "mod"
+  }
+}
