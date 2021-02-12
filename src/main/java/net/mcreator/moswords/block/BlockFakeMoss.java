@@ -84,7 +84,7 @@ public class BlockFakeMoss extends ElementsMoSwords.ModElement {
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<String> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add("Regular Moss");
+			list.add("Regular Moss but with a chest inside");
 		}
 
 		@Override
