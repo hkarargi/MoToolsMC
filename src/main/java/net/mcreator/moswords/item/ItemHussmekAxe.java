@@ -27,7 +27,7 @@ public class ItemHussmekAxe extends ElementsMoSwords.ModElement {
 	@GameRegistry.ObjectHolder("moswords:hussmekaxe")
 	public static final Item block = null;
 	public ItemHussmekAxe(ElementsMoSwords instance) {
-		super(instance, 52);
+		super(instance, 3);
 	}
 
 	@Override

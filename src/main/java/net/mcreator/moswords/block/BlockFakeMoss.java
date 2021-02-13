@@ -49,7 +49,7 @@ public class BlockFakeMoss extends ElementsMoSwords.ModElement {
 	@GameRegistry.ObjectHolder("moswords:fakemoss")
 	public static final Block block = null;
 	public BlockFakeMoss(ElementsMoSwords instance) {
-		super(instance, 44);
+		super(instance, 21);
 	}
 
 	@Override

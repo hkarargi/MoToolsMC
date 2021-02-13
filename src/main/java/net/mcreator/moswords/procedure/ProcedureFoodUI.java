@@ -12,7 +12,7 @@ import net.mcreator.moswords.ElementsMoSwords;
 @ElementsMoSwords.ModElement.Tag
 public class ProcedureFoodUI extends ElementsMoSwords.ModElement {
 	public ProcedureFoodUI(ElementsMoSwords instance) {
-		super(instance, 32);
+		super(instance, 41);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

@@ -10,7 +10,7 @@ import net.mcreator.moswords.ElementsMoSwords;
 @ElementsMoSwords.ModElement.Tag
 public class ProcedurePotionInvisRightClickedInAir extends ElementsMoSwords.ModElement {
 	public ProcedurePotionInvisRightClickedInAir(ElementsMoSwords instance) {
-		super(instance, 36);
+		super(instance, 45);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

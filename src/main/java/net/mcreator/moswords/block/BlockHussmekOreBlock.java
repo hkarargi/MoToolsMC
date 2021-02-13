@@ -22,7 +22,7 @@ public class BlockHussmekOreBlock extends ElementsMoSwords.ModElement {
 	@GameRegistry.ObjectHolder("moswords:hussmekoreblock")
 	public static final Block block = null;
 	public BlockHussmekOreBlock(ElementsMoSwords instance) {
-		super(instance, 46);
+		super(instance, 23);
 	}
 
 	@Override

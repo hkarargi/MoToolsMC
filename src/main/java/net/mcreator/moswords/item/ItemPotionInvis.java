@@ -28,7 +28,7 @@ public class ItemPotionInvis extends ElementsMoSwords.ModElement {
 	@GameRegistry.ObjectHolder("moswords:potioninvis")
 	public static final Item block = null;
 	public ItemPotionInvis(ElementsMoSwords instance) {
-		super(instance, 9);
+		super(instance, 15);
 	}
 
 	@Override

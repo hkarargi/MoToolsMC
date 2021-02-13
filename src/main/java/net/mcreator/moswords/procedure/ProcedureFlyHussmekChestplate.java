@@ -8,7 +8,7 @@ import net.mcreator.moswords.ElementsMoSwords;
 @ElementsMoSwords.ModElement.Tag
 public class ProcedureFlyHussmekChestplate extends ElementsMoSwords.ModElement {
 	public ProcedureFlyHussmekChestplate(ElementsMoSwords instance) {
-		super(instance, 68);
+		super(instance, 62);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

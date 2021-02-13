@@ -24,7 +24,7 @@ public class ItemBlueHoe extends ElementsMoSwords.ModElement {
 	@GameRegistry.ObjectHolder("moswords:bluehoe")
 	public static final Item block = null;
 	public ItemBlueHoe(ElementsMoSwords instance) {
-		super(instance, 5);
+		super(instance, 11);
 	}
 
 	@Override

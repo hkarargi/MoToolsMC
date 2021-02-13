@@ -9,10 +9,10 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
+import net.mcreator.moswords.creativetab.TabBlueTab;
 import net.mcreator.moswords.ElementsMoSwords;
 
 @ElementsMoSwords.ModElement.Tag
@@ -20,7 +20,7 @@ public class ItemHussmekIngot extends ElementsMoSwords.ModElement {
 	@GameRegistry.ObjectHolder("moswords:hussmekingot")
 	public static final Item block = null;
 	public ItemHussmekIngot(ElementsMoSwords instance) {
-		super(instance, 47);
+		super(instance, 24);
 	}
 
 	@Override
@@ -39,7 +39,7 @@ public class ItemHussmekIngot extends ElementsMoSwords.ModElement {
 			maxStackSize = 64;
 			setUnlocalizedName("hussmekingot");
 			setRegistryName("hussmekingot");
-			setCreativeTab(CreativeTabs.MISC);
+			setCreativeTab(TabBlueTab.tab);
 		}
 
 		@Override

@@ -13,7 +13,7 @@ import net.mcreator.moswords.ElementsMoSwords;
 @ElementsMoSwords.ModElement.Tag
 public class TabBlueTab extends ElementsMoSwords.ModElement {
 	public TabBlueTab(ElementsMoSwords instance) {
-		super(instance, 30);
+		super(instance, 39);
 	}
 
 	@Override

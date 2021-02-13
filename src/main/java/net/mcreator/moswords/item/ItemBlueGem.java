@@ -20,7 +20,7 @@ public class ItemBlueGem extends ElementsMoSwords.ModElement {
 	@GameRegistry.ObjectHolder("moswords:bluegem")
 	public static final Item block = null;
 	public ItemBlueGem(ElementsMoSwords instance) {
-		super(instance, 7);
+		super(instance, 13);
 	}
 
 	@Override
