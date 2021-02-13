@@ -14,7 +14,7 @@
       "name": "FlyHussmekChestplate"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:BlueTab"
     },
     "armorTextureFile": "hussmek",
     "helmetName": "Hussmek Helmet",
@@ -35,16 +35,20 @@
     "bootsModelPartL": "Boots L",
     "bootsModelPartR": "Boots R",
     "bootsModelTexture": "From armor",
-    "maxDamage": 15,
-    "damageValueHelmet": 2,
-    "damageValueBody": 5,
-    "damageValueLeggings": 6,
-    "damageValueBoots": 2,
-    "enchantability": 9,
-    "toughness": 0.0,
+    "maxDamage": 999,
+    "damageValueHelmet": 900,
+    "damageValueBody": 1000,
+    "damageValueLeggings": 900,
+    "damageValueBoots": 800,
+    "enchantability": 90,
+    "toughness": 5.0,
     "equipSound": {
-      "value": ""
+      "value": "block.fire.extinguish"
     },
-    "repairItems": []
+    "repairItems": [
+      {
+        "value": "CUSTOM:HussmekIngot"
+      }
+    ]
   }
 }

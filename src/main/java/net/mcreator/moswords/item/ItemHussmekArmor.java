@@ -15,10 +15,10 @@ import net.minecraft.item.ItemArmor;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 
 import net.mcreator.moswords.procedure.ProcedureFlyHussmekChestplate;
+import net.mcreator.moswords.creativetab.TabBlueTab;
 import net.mcreator.moswords.ElementsMoSwords;
 
 @ElementsMoSwords.ModElement.Tag
@@ -37,10 +37,10 @@ public class ItemHussmekArmor extends ElementsMoSwords.ModElement {
 
 	@Override
 	public void initElements() {
-		ItemArmor.ArmorMaterial enuma = EnumHelper.addArmorMaterial("HUSSMEKARMOR", "moswords:hussmek", 15, new int[]{2, 6, 5, 2}, 9,
-				(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("")), 0f);
+		ItemArmor.ArmorMaterial enuma = EnumHelper.addArmorMaterial("HUSSMEKARMOR", "moswords:hussmek", 999, new int[]{800, 900, 1000, 900}, 90,
+				(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("block.fire.extinguish")), 5f);
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.HEAD).setUnlocalizedName("hussmekarmorhelmet")
-				.setRegistryName("hussmekarmorhelmet").setCreativeTab(CreativeTabs.COMBAT));
+				.setRegistryName("hussmekarmorhelmet").setCreativeTab(TabBlueTab.tab));
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.CHEST) {
 			@Override
 			public void onArmorTick(World world, EntityPlayer entity, ItemStack itemstack) {
@@ -53,11 +53,11 @@ public class ItemHussmekArmor extends ElementsMoSwords.ModElement {
 					ProcedureFlyHussmekChestplate.executeProcedure($_dependencies);
 				}
 			}
-		}.setUnlocalizedName("hussmekarmorbody").setRegistryName("hussmekarmorbody").setCreativeTab(CreativeTabs.COMBAT));
+		}.setUnlocalizedName("hussmekarmorbody").setRegistryName("hussmekarmorbody").setCreativeTab(TabBlueTab.tab));
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.LEGS).setUnlocalizedName("hussmekarmorlegs")
-				.setRegistryName("hussmekarmorlegs").setCreativeTab(CreativeTabs.COMBAT));
+				.setRegistryName("hussmekarmorlegs").setCreativeTab(TabBlueTab.tab));
 		elements.items.add(() -> new ItemArmor(enuma, 0, EntityEquipmentSlot.FEET).setUnlocalizedName("hussmekarmorboots")
-				.setRegistryName("hussmekarmorboots").setCreativeTab(CreativeTabs.COMBAT));
+				.setRegistryName("hussmekarmorboots").setCreativeTab(TabBlueTab.tab));
 	}
 
 	@SideOnly(Side.CLIENT)
